@@ -52,7 +52,4 @@ string	Animal::getType() const
 	return this->_type;
 }
 
-void	Animal::makeSound() const 
-{
-	std::cout << "...";
-}
+void	Animal::makeSound() const {}
