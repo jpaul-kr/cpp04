@@ -21,10 +21,11 @@ class Dog : public Animal
 		Dog();
 		Dog(const string type);
 		Dog(const Dog& cpy);
-		~Dog();
+		virtual	~Dog();
 
 		Dog&	operator=(const Dog& cpy);
 		void	makeSound() const;
+		Brain*	getBrain() const;
 	
 	private:
 		Brain*	_brain;

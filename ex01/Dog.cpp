@@ -35,7 +35,7 @@ Dog::Dog(const Dog& cpy) : Animal(cpy)
 
 Dog::~Dog() 
 {
-	std::cout << "Dog default destructor called" << std::endl;
+	std::cout << "Dog destructor called" << std::endl;
 	delete _brain;
 }
 
@@ -50,4 +50,9 @@ Dog&	Dog::operator=(const Dog& cpy)
 void	Dog::makeSound() const
 {
 	std::cout << "Woof!" << std::endl;
+}
+
+Brain*	Dog::getBrain() const
+{
+	return this->_brain;
 }

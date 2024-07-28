@@ -34,7 +34,7 @@ Cat::Cat(const Cat& cpy) : Animal(cpy)
 
 Cat::~Cat() 
 {
-	std::cout << "Cat default destructor called" << std::endl;
+	std::cout << "Cat destructor called" << std::endl;
 	delete _brain;
 }
 
@@ -49,4 +49,9 @@ Cat&	Cat::operator=(const Cat& cpy)
 void	Cat::makeSound() const
 {
 	std::cout << "Miau!" << std::endl;
+}
+
+Brain*	Cat::getBrain() const
+{
+	return this->_brain;
 }
