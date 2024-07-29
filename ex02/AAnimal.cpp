@@ -1,55 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpaul-kr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 10:57:20 by jpaul-kr          #+#    #+#             */
-/*   Updated: 2024/07/22 13:10:19 by jpaul-kr         ###   ########.fr       */
+/*   Updated: 2024/07/29 11:30:22 by jpaul-kr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 
-Animal::Animal()
+AAnimal::AAnimal()
 {
 	std::cout << "Animal default constructor called" << std::endl;
 }
 
 
-Animal::Animal(const string type) : _type(type)
+AAnimal::AAnimal(const string type) : _type(type)
 {
 	std::cout << "Animal init constructor called" << std::endl;
 }
 
 
-Animal::Animal(const Animal& cpy)
+AAnimal::AAnimal(const AAnimal& cpy)
 {
 	
 	std::cout << "Animal copy constructor called" << std::endl;
 	*this = cpy;
 }
-Animal::~Animal()
+AAnimal::~AAnimal()
 {
 	std::cout << "Animal destructor called" << std::endl;
 }
 
-Animal&	Animal::operator=(const Animal& cpy)
+AAnimal&	AAnimal::operator=(const AAnimal& cpy)
 {
 	std::cout << "Animal copy assignment operator called" << std::endl;
 	this->_type = cpy._type;
 	return *this;
 }
 
-void	Animal::setType(const string type)
+void	AAnimal::setType(const string type)
 {
 	_type = type;
 }
 
-string	Animal::getType() const
+string	AAnimal::getType() const
 {
 	return this->_type;
 }
 
-void	Animal::makeSound() const {}
+void	AAnimal::makeSound() const {}

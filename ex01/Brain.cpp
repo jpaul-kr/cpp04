@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jpaul-kr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/29 11:08:12 by jpaul-kr          #+#    #+#             */
+/*   Updated: 2024/07/29 12:48:28 by jpaul-kr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Brain.hpp"
 
 Brain::Brain()
@@ -7,7 +19,7 @@ Brain::Brain()
 
 Brain::Brain(const Brain& cpy)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "Brain copy constructor called" << std::endl;
 	*this = cpy;
 }
 
