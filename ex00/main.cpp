@@ -6,7 +6,7 @@
 /*   By: jpaul-kr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 10:55:59 by jpaul-kr          #+#    #+#             */
-/*   Updated: 2024/07/22 12:54:10 by jpaul-kr         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:31:53 by jpaul-kr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ int	main()
 	meta->makeSound();
 	
 	std::cout << std::endl;
-	const WrongCat	wg;
+	const	WrongAnimal	wg = WrongCat("WrongCat");
+	//const	WrongCat	wg("WrongCat");
 
 	std::cout << wg.getType() << ": ";
 	wg.makeSound();

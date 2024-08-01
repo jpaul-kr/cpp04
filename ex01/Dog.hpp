@@ -6,7 +6,7 @@
 /*   By: jpaul-kr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 12:46:18 by jpaul-kr          #+#    #+#             */
-/*   Updated: 2024/07/22 13:02:48 by jpaul-kr         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:38:18 by jpaul-kr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Dog : public Animal
 		Dog();
 		Dog(const string type);
 		Dog(const Dog& cpy);
-		virtual	~Dog();
+		~Dog();
 
 		Dog&	operator=(const Dog& cpy);
 		void	makeSound() const;

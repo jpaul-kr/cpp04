@@ -6,7 +6,7 @@
 /*   By: jpaul-kr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 12:14:25 by jpaul-kr          #+#    #+#             */
-/*   Updated: 2024/07/22 13:03:00 by jpaul-kr         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:38:07 by jpaul-kr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Cat : public Animal
 		Cat();
 		Cat(const string type);
 		Cat(const Cat& cpy);
-		virtual ~Cat();
+		~Cat();
 
 		Cat&	operator=(const Cat& cpy);
 		void	makeSound() const;
